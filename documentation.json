@@ -50,17 +50,6 @@
         ]
       },
       {
-        "tab": "API Reference",
-        "icon": "code",
-        "groups": [
-          {
-            "group": "Endpoints",
-            "icon": "terminal",
-            "openapi": "openapi.yaml"
-          }
-        ]
-      },
-      {
         "tab": "Help Center",
         "icon": "help-circle",
         "pages": [
@@ -103,11 +92,6 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Changelog",
-        "icon": "clock",
-        "pages": []
       }
     ]
   }
