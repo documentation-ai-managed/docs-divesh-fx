@@ -1,0 +1,99 @@
+---
+title: Introduction to Divesh FX
+description: Discover Divesh FX, a comprehensive documentation platform designed to help you organize and manage all your project documentation efficiently.
+---
+
+## Overview
+
+Divesh FX empowers you to create, organize, and collaborate on project documentation with ease. You build structured knowledge bases, embed interactive elements, and integrate with your tools—all in one intuitive platform. Start organizing your docs today and streamline your team's workflow.
+
+## Key Benefits
+
+Divesh FX delivers powerful features tailored for project teams. Use the grid below to explore the core advantages.
+
+<Columns cols={3}>
+  <Card title="Centralized Organization" icon="database" href="#organization">
+    Keep all your project docs in one searchable space. Categorize content with spaces, folders, and tags for instant access.
+  </Card>
+  <Card title="Seamless Collaboration" icon="users" href="#collaboration">
+    Invite team members, assign roles, and track changes in real time. Version history ensures nothing gets lost.
+  </Card>
+  <Card title="Custom Integrations" icon="zap" href="#integrations">
+    Connect with GitHub, Slack, and APIs to automate workflows. Embed live previews and dynamic content effortlessly.
+  </Card>
+</Columns>
+
+## Quick Start
+
+Get up and running with Divesh FX in minutes. Follow these steps to create your first documentation space.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Visit `https://dashboard.example.com` and create your account with email or SSO.
+  </Step>
+  <Step title="Create a Space" icon="folder-plus">
+    Click "New Space" and name it for your project, like "My Project Docs".
+  </Step>
+  <Step title="Add Your First Doc" icon="file-plus">
+    Upload Markdown files or start writing directly. Use the editor to add components like cards and steps.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // Initialize Divesh FX client
+  import { DiveshFX } from '@diveshfx/sdk';
+
+  const client = new DiveshFX({ apiKey: 'YOUR_API_KEY' });
+  await client.spaces.create({ name: 'My Project Docs' });
+  ```
+  ```python
+  # Initialize Divesh FX client
+  from diveshfx import DiveshFX
+
+  client = DiveshFX(api_key='YOUR_API_KEY')
+  client.spaces.create(name='My Project Docs')
+  ```
+</CodeGroup>
+
+## Essential Navigation
+
+Jump to key sections to dive deeper.
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="rocket" href="/quickstart">
+    Set up your first project in under 5 minutes.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your docs with API keys and OAuth.
+  </Card>
+  <Card title="Guides" icon="book-open" href="/guides">
+    Advanced topics and best practices.
+  </Card>
+  <Card title="Changelog" icon="git-commit" href="/changelog">
+    Stay updated with the latest releases.
+  </Card>
+</Columns>
+
+## Brand Guidelines
+
+Follow these guidelines to maintain consistency across your documentation.
+
+<Callout kind="info">
+  Primary Brand Color: <code>#3B82F6</code><br/>
+  Use this blue (`#3B82F6`) for headings, links, and accents. Pair with neutral grays for text and white space.
+</Callout>
+
+<Expandable title="Full Color Palette" default-open="false">
+  | Color       | Hex Code   | Usage                  |
+  |-------------|------------|------------------------|
+  | Primary    | `#3B82F6` | Buttons, links         |
+  | Secondary  | `#1E40AF` | Hover states           |
+  | Success    | `#10B981` | Confirmations          |
+  | Danger     | `#EF4444` | Errors, deletions      |
+  | Neutral    | `#6B7280` | Body text              |
+</Expandable>
+
+<Callout kind="tip">
+  Ready to build? Head to the [Quickstart](/quickstart) for hands-on setup. Customize your space with the brand color `#3B82F6` for a professional look.
+</Callout>

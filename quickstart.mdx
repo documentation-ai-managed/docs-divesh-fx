@@ -1,0 +1,111 @@
+---
+title: Getting Started with Divesh FX
+description: Set up your account and create your first documentation space in just a few minutes to begin organizing your projects.
+---
+
+## Prerequisites
+
+<Callout kind="info">
+Before starting, ensure you have:
+- A modern web browser (Chrome, Firefox, or Safari)
+- An email address for account verification
+- Optional: Node.js v18+ for CLI tools
+</Callout>
+
+## Sign Up for a New Account
+
+Follow these steps to create your Divesh FX account.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="monitor">
+    Navigate to `https://dashboard.example.com` and click **Sign Up**.
+  </Step>
+  <Step title="Enter Your Details" icon="user">
+    Provide your email, password, and team name. Accept the terms of service.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification link from Divesh FX and click it to activate your account.
+  </Step>
+</Steps>
+
+## Create Your First Documentation Space
+
+Once logged in, set up a space for your project.
+
+<Steps>
+  <Step title="Select New Space" icon="plus">
+    From the dashboard, click **New Documentation Space**.
+  </Step>
+  <Step title="Configure Space" icon="settings">
+    Enter a name like `My Project Docs`, select visibility (private or public), and choose a slug like `my-project`.
+  </Step>
+  <Step title="Publish Space" icon="rocket">
+    Click **Create Space**. You'll land on the editor interface.
+  </Step>
+</Steps>
+
+## Upload Initial Project Files
+
+Add your project files using the browser or CLI.
+
+<Tabs>
+  <Tab title="Browser Drag & Drop" icon="mouse">
+    In the editor, drag files like `README.md` or `api-spec.yaml` into the upload zone.
+    
+    Supported formats: MDX, Markdown, YAML, JSON, images.
+  </Tab>
+  <Tab title="CLI Upload" icon="terminal">
+    Install the CLI and upload files programmatically.
+    
+    <CodeGroup tabs="npm,yarn">
+    ````bash
+    npm install -g @diveshfx/cli
+    ````
+    ````bash
+    yarn global add @diveshfx/cli
+    ````
+    </CodeGroup>
+    
+    ````bash
+    diveshfx login --email your@email.com --space my-project
+    diveshfx upload ./docs/README.md --path /introduction
+    ````
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+Use the CLI for automation in CI/CD pipelines.
+</Callout>
+
+## Basic Interface Tour
+
+Explore the main sections of the Divesh FX editor.
+
+<Columns cols={3}>
+  <Card title="Editor Panel" icon="edit-3">
+    Write and preview MDX content in real-time.
+  </Card>
+  <Card title="File Tree" icon="file-tree">
+    Manage your documentation hierarchy and uploads.
+  </Card>
+  <Card title="Publish Settings" icon="globe">
+    Configure custom domains and SEO options.
+  </Card>
+</Columns>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your spaces with API keys and webhooks.
+  </Card>
+  <Card title="Advanced Configuration" icon="settings" href="/configuration">
+    Customize themes and integrations.
+  </Card>
+</Columns>
+
+<Expandable title="Troubleshooting Common Issues" default-open="false">
+- **Upload fails**: Check file size limits (`<10MB` per file).
+- **Space not visible**: Verify team permissions in account settings.
+- **CLI auth error**: Run `diveshfx logout` then login again.
+</Expandable>

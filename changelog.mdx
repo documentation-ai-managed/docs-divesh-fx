@@ -1,0 +1,132 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Divesh FX, including new features and bug fixes.
+---
+
+## Recent Updates
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Added real-time forex rate streaming via WebSockets at `wss://api.example.com/v1/stream/rates`.
+- Introduced portfolio analytics dashboard with performance charts and risk metrics.
+- Support for multi-account management, allowing you to switch between trading accounts seamlessly.
+
+## Improvements
+
+- Optimized API response times by `>30%` for high-frequency trading endpoints.
+- Enhanced mobile responsiveness for the trading interface.
+
+## Bug Fixes
+
+- Fixed authentication token refresh issues during long sessions.
+- Resolved currency pair loading errors for exotic pairs like USD/ZAR.
+- Corrected position history pagination on the dashboard.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Integrated economic calendar with event impact ratings and notifications.
+- Added custom alert system for price thresholds and news events.
+
+## Improvements
+
+- Upgraded charting library to support 50+ technical indicators.
+- Improved order execution reliability with better slippage handling.
+
+## Bug Fixes
+
+- Fixed order cancellation failures under high market volatility.
+- Patched login redirect loop for two-factor authentication.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## New Features
+
+- Core trading API with market orders, limit orders, and stop-loss support.
+- User dashboard for live positions, balances, and trade history.
+- Basic authentication via API keys.
+
+## Breaking Changes
+
+- Updated base API URL from `/v0` to `/v1`. Update your integration endpoints accordingly.
+
+## Initial Setup Notes
+
+Migrate existing calls by prepending `/v1` to paths.
+
+</Update>
+
+## Migration Guide
+
+<Callout kind="alert">
+Review breaking changes before upgrading. Test in staging environment using your sandbox API key.
+</Callout>
+
+Follow these steps to upgrade smoothly:
+
+<Steps>
+  <Step title="Backup Configuration" icon="database">
+    Export your current settings and API integrations.
+  </Step>
+  <Step title="Update Endpoints" icon="settings">
+    <CodeGroup tabs="JavaScript,Python">
+      ````javascript
+      // Old v0 endpoint
+      const response = await fetch('https://api.example.com/v0/trades');
+
+      // New v1 endpoint
+      const response = await fetch('https://api.example.com/v1/trades');
+      ````
+      ````python
+      import requests
+
+      # Old v0 endpoint
+      response = requests.get('https://api.example.com/v0/trades')
+
+      # New v1 endpoint
+      response = requests.get('https://api.example.com/v1/trades')
+      ````
+    </CodeGroup>
+  </Step>
+  <Step title="Regenerate Tokens" icon="key">
+    Generate new API keys from `https://dashboard.example.com/api-keys`.
+  </Step>
+  <Step title="Test Integration" icon="play">
+    Run your test suite against the sandbox environment.
+  </Step>
+</Steps>
+
+## Upcoming Features
+
+<Columns cols={3}>
+  <Card title="Advanced Backtesting" icon="trending-up" href="#backtesting">
+    Simulate strategies with historical tick data.
+  </Card>
+  <Card title="AI Trade Signals" icon="zap" href="#signals">
+    Machine learning-powered entry/exit recommendations.
+  </Card>
+  <Card title="Copy Trading" icon="users" href="#copy-trading">
+    Mirror top traders' positions automatically.
+  </Card>
+</Columns>
+
+<Expandable title="Detailed Roadmap" default-open="false">
+
+| Quarter | Feature | Status |
+|---------|---------|--------|
+| Q4 2024 | Multi-asset support (crypto, stocks) | Planned |
+| Q1 2025 | Automated trading bots | In Development |
+| Q2 2025 | Institutional API tier | Researching |
+
+</Expandable>
+
+<Callout kind="tip">
+Subscribe to updates at `https://dashboard.example.com/notifications` to stay informed on releases.
+</Callout>
