@@ -107,13 +107,7 @@
       {
         "tab": "Changelog",
         "icon": "clock",
-        "pages": [
-          {
-            "title": "Release History",
-            "path": "changelog",
-            "icon": "history"
-          }
-        ]
+        "pages": []
       }
     ]
   }
