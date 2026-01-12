@@ -94,5 +94,9 @@
         ]
       }
     ]
-  }
+  },
+  "template": "atlas",
+  "logo-dark": "https://blob-cdn.documentation.ai/org-8cbf64a9-6f2c-427e-bd06-f416bbd3c744/doc-f1366fa1-aec8-4d30-8763-0e8d3090a6ef/1768192627543-p0jnwyiygbd-v--400-x-200-px---100-x-70-px---500-x-500-px-.png?q=85&fm=auto&auto=compress%2Cformat",
+  "logo-light": "https://blob-cdn.documentation.ai/org-8cbf64a9-6f2c-427e-bd06-f416bbd3c744/doc-f1366fa1-aec8-4d30-8763-0e8d3090a6ef/1768192627543-p0jnwyiygbd-v--400-x-200-px---100-x-70-px---500-x-500-px-.png?q=85&fm=auto&auto=compress%2Cformat",
+  "favicon": "https://blob-cdn.documentation.ai/org-8cbf64a9-6f2c-427e-bd06-f416bbd3c744/doc-f1366fa1-aec8-4d30-8763-0e8d3090a6ef/1768192627543-p0jnwyiygbd-v--400-x-200-px---100-x-70-px---500-x-500-px-.png?q=85&fm=auto&auto=compress%2Cformat"
 }
